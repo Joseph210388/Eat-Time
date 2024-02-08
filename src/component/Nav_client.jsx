@@ -9,13 +9,44 @@ function Nav_client() {
   const [burgerChecked, setBurgerChecked] = useState(false);
 
   useEffect(() => {
-      if (burgerChecked) {
-        document.querySelector('.Navbar').style.right = '0%';
+
+    function navBarResize(){
+      if(window.innerWidth < 992){
+        if (burgerChecked) {
+          document.querySelector('.Navbar').style.right = '0%';
+          document.querySelector('.Navbar').style.display='flex';
+        } else {
+          document.querySelector('.Navbar').style.right = '-100%';   
+          document.querySelector('.Navbar').style.display='none';
+        };
       } else {
-        document.querySelector('.Navbar').style.right = '-100%';
+        document.querySelector('.Navbar').style.right = '0%';
+        document.querySelector('.Navbar').style.display='flex';
       }
+    }
+
+    navBarResize();
+
+    window.addEventListener('resize', navBarResize);
+
+    return()=>{
+      window.removeEventListener('resize', navBarResize);
+    }
+    
+      
   }, [burgerChecked]);
+
+  useEffect(() => {
+
+    window.addEventListener('resize', ()=>{
+      
+    });
+      
+  }, []);
+
   /* fin de js */
+
+
   return (
     <header id="Nav_client">
       <div className="Navlogo">
@@ -29,18 +60,19 @@ function Nav_client() {
       <div className="Navbar">
         <ul>
           <li><Link to={"/"}>Inicio</Link></li>
-          <li><Link to={"/Menu"}>Menu</Link></li>
+          <li><Link to={"/Reserva"}>Reservas</Link></li>
           <li><Link to={"/About"}>Acerca</Link></li>
           <li><Link to={"/Contact"}>Contacto</Link></li>
+          <Link to={"/Login"}>
+            <button>Iniciar Sesion</button>      
+          </Link>
         </ul>
       </div>
       <div id="Navlogin">
         <Link to={"/Login"}>
           <button>Iniciar Sesion</button>      
         </Link>
-        <Link to={"/Register"}>
-          <button>Registrar</button>      
-        </Link>
+        
         <label className="burger" htmlFor="burger">
           <input type="checkbox" id="burger" checked={burgerChecked} 
             onChange={() => setBurgerChecked(!burgerChecked)} />

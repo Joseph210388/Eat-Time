@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Menu from './component/Menu';
+import Reserva from './component/Reserva';
 
 import Contact from './component/Contact';
 
@@ -25,8 +25,8 @@ const router = createBrowserRouter([
   },
   
   {
-    path:"/Menu",
-    element: <Menu />
+    path:"/Reserva",
+    element: <Reserva />
   },
   
   {

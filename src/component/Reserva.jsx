@@ -1,10 +1,11 @@
 import React from "react";
-import '../css/Style-Pages/Menu.css';
+import '../css/Style-Pages/Reserva.css';
 import Footer2 from "./Footer2";
 import Nav_client from "./Nav_client";
 
 
-function Menu() {
+function Reserva() {
+    /* inicio de la contaste obtenerFecha */
     const obtenerFecha = () => {
     const fecha = new Date();
     const diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
@@ -15,17 +16,18 @@ function Menu() {
 
     return `${dia}, ${fecha.getDate()} ${mes} ${anio}`;
     };
+    /* fin de constante que permite tener la fecha */
     return(
         <div>
             <Nav_client />
             <div className="Menucontainer">
                 <div className="Menucontainerbox">
-                    <h2>Tay Pay Menu</h2>
+                    <h2>Haz tu Reserva</h2>
                     <hr />
                     <div className="Menufecha">
                     <span>{obtenerFecha()}</span>
                     </div>
-                    <p>Preparamos la autentica y deliciosa comida peruana con ingredientes frescos cocinados al momento. Siente la sazon de la comida andina</p>
+                    <p>Haz tu reserva de para poder disfrutar la experiencia de la gastronomía peruana.</p>
                     <div className="Menuopcions">
                         <div className="Menuopcionsbox1">
                             <h3>Piqueos</h3>
@@ -51,4 +53,4 @@ function Menu() {
         </div>
     );
 }
-export default Menu;
+export default Reserva;

@@ -42,21 +42,21 @@ function Register(){
                     </div>
                     <br />
                     <label>
+                        Your Email: <br />
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </label>
+                    <br />
+                    <label>
                     Your Password: <br />
                     <input
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
-                    </label>
-                    <br />
-                    <label>
-                        Your email: <br />
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
                     </label>
                     <br />
                     <div className="Formcheck">
