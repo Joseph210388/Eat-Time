@@ -1,22 +1,18 @@
 import React from "react";
 import '../css/Style-Pages/Contact.css';
-import Footer2 from "./Footer2";
-import Nav_client from "./Nav_client";
 import imgContact from "../img/photo/Contactimg.png";
-import { Link } from "react-router-dom";
 
 function Contact(){
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aquí puedes manejar la lógica de envío del formulario, por ejemplo, enviar los datos a un servidor o hacer alguna acción con los datos.
       };
     
       return (
         <div>
-          <Nav_client />
-          <div className="containerContact">
+
+          <div className="containerContact container-fluid bg-white">
             <div className="Contactsection2">
-              <img src={imgContact} alt="" />
+              <img className="img-fluid" src={imgContact} alt="" />
             </div>
             <div className="Contactsection1">
               <div className="Contactsection1box">
@@ -55,7 +51,6 @@ function Contact(){
               </div>
             </div>
           </div>
-          <Footer2 />
         </div>
       );
 }

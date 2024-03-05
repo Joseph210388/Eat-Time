@@ -2,11 +2,10 @@
 import React from 'react';
 import './App.css';
 import Nav_client from './component/Nav_client';
-import { Link } from 'react-router-dom';
 import Footer2 from './component/Footer2';
-import logo from "./img/icons/logo.png";
 import Home from  './component/Home';
 import About from './component/About';
+import Contact from './component/Contact';
 
 
 
@@ -16,8 +15,8 @@ function App() {
     <div className='App'>
       <Nav_client />
       <Home />
-      
       <About/>
+      <Contact />
       <Footer2/>
     </div>
   )

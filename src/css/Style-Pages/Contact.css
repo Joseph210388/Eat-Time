@@ -1,8 +1,8 @@
 
 .containerContact {
   display: flex;
+  padding: 0%;
   justify-content: space-around;
-  height: 75vh;
  }
  
  .Contactsection1 {

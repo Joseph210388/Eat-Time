@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Reserva from './component/Reserva';
 
 import Contact from './component/Contact';
 
@@ -24,10 +23,6 @@ const router = createBrowserRouter([
     element: <App />
   },
   
-  {
-    path:"/Reserva",
-    element: <Reserva />
-  },
   
   {
     path: "/About",

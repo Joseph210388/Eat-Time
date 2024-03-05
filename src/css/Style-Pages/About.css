@@ -34,20 +34,6 @@
     margin-bottom: 30px;
    }
    
-   .Aboutsection1box button {
-    background: var(--Peru, linear-gradient(180deg, #ED213A 0%, #93291E 100%));
-    border: none;
-    border-radius: 16px;
-    color: white;
-    padding: 8px 45px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 2.5px;
-    cursor: pointer;
-   }
    .rounded-img {
     border-radius: 15px;
     height: 350px;

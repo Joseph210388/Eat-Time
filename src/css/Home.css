@@ -57,7 +57,7 @@
 /* Fin de botones */
 
 .AppSection2{
-    background-image: url(../img/photo/Background.jpeg);
+    background-color: #ececec;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -60,9 +60,9 @@ function Nav_client() {
       <div className="Navbar">
         <ul>
           <li><Link to={"/"}>Inicio</Link></li>
-          <li><Link to={"/Reserva"}>Reservas</Link></li>
-          <li><Link to={"/About"}>Acerca</Link></li>
-          <li><Link to={"/Contact"}>Contacto</Link></li>
+          <li><Link to={""}>Reservas</Link></li>
+          <li><Link to={""}>Acerca</Link></li>
+          <li><Link to={""}>Contacto</Link></li>
           <Link to={"/Login"}>
             <button>Iniciar Sesion</button>      
           </Link>
